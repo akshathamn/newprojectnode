@@ -4,23 +4,23 @@ const Schema = mongoose.Schema;
 const  UserSchema = new Schema({
   firstname:{
     type:String,
-    required:'first name is required'
+    required: true
   },
   lastname:{
     type:String,
-    required:'last name is required'
+    required: true
   },
   phone_number:{
     type:Number,
-    required:'phone number cannot be blank'
+    required: true
   },
   email:{
     type:String,
-    required:'please Enter valid name'
+    required: true
   },
   password: {
     type: String,
-    required: 'Please Enter valid emailId'
+    required: true
   }
 });
 
